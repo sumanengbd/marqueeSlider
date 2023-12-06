@@ -50,6 +50,14 @@ repeatItems: Determines whether the items in the slider should be repeated. Defa
   </ul>
 </div>
 
+<div class="marquee-slider">
+  <ul class="marquee-slider__list">
+    <li class="marquee-slider__list--item">Item 1</li>
+    <li class="marquee-slider__list--item">Item 2</li>
+    <!-- Add more items as needed -->
+  </ul>
+</div>
+
 <script>
   $('.marquee-slider').marqueeSlider([
     { sensitivity: 0.1, repeatItems: true },
