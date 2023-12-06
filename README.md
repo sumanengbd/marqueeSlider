@@ -39,6 +39,8 @@ The plugin supports the following options:
 sensitivity: Controls the speed of scrolling based on the user's scroll. Default is 0.1.
 repeatItems: Determines whether the items in the slider should be repeated. Default is true.
 
+## Example
+
 ```html
 <div class="marquee-slider">
   <ul class="marquee-slider__list">
