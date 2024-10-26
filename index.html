@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Marquee Slider jQuery Plugin</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+	<style>
+		body {
+		  margin: 0;
+		  overflow-x: hidden;
+		}
+
+		.content {
+		    padding: 50px 0;
+		}
+
+		.marquee-slider {
+		    width: 100%;
+		    padding: 100px 0;
+		    background: #9b4dca;
+		    grid-column-gap: 1.6rem;
+		    grid-row-gap: 1.6rem;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: stretch;
+		    margin-left: auto;
+		    margin-right: auto;
+		    display: flex;
+		    position: relative;
+		    
+		    &__list {
+		        flex: none;
+		        display: flex;
+		        flex-flow: row;
+		        align-items: stretch;
+		        grid-row-gap: 1.6rem;
+		        justify-content: center;
+		        grid-column-gap: 1.6rem;
+		        transition: transform .3s cubic-bezier(.215,.61,.38,1.399);
+		        
+		        &--item {
+		            color: #FFF;
+		            width: 100%;
+		            height: 100%;
+		            max-width: 260px;
+		            min-height: 260px;
+		            grid-column-gap: 1.6rem;
+		            border-radius: 0.8rem;
+		            flex: none;
+		            display: flex;
+		            padding: 1.2rem;
+		            position: relative;
+		            align-items: center;
+		            grid-row-gap: 1.6rem;
+		            justify-content: center;
+		            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+		            background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.09));
+		        }
+		    }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	    <div class="content">
+	        <h1>Marquee Slider jQuery Plugin</h1>
+	        <p>The Marquee Slider jQuery Plugin is a lightweight and customizable plugin for creating a marquee-style slider with the ability to repeat items. It smoothly adjusts the position of items based on the user's scroll behaviour, creating an engaging scrolling effect.</p>
+	        <p><a href="https://github.com/sumanengbd/marqueeSlider" class="button button-outline">👉 Get Source Code</a></p>
+	        
+	        <h2 style="margin-bottom: 0">Demo Group 1 👇</h2>
+	    </div>
+	 </div>
+
+	<div class="marquee-slider marquee-slider1">
+	    <div class="marquee-slider__list">
+	        <div class="marquee-slider__list--item">Item 1</div>
+	        <div class="marquee-slider__list--item">Item 2</div>
+	        <div class="marquee-slider__list--item">Item 3</div>
+	        <div class="marquee-slider__list--item">Item 4</div>
+	        <div class="marquee-slider__list--item">Item 5</div>
+	        <div class="marquee-slider__list--item">Item 6</div>
+	        <div class="marquee-slider__list--item">Item 7</div>
+	        <div class="marquee-slider__list--item">Item 8</div>
+	        <div class="marquee-slider__list--item">Item 9</div>
+	     </div>
+	    <div class="marquee-slider__list">
+	        <div class="marquee-slider__list--item">Item 1</div>
+	        <div class="marquee-slider__list--item">Item 2</div>
+	        <div class="marquee-slider__list--item">Item 3</div>
+	        <div class="marquee-slider__list--item">Item 4</div>
+	        <div class="marquee-slider__list--item">Item 5</div>
+	        <div class="marquee-slider__list--item">Item 6</div>
+	        <div class="marquee-slider__list--item">Item 7</div>
+	        <div class="marquee-slider__list--item">Item 8</div>
+	        <div class="marquee-slider__list--item">Item 9</div>
+	     </div>
+	    <div class="marquee-slider__list">
+	        <div class="marquee-slider__list--item">Item 1</div>
+	        <div class="marquee-slider__list--item">Item 2</div>
+	        <div class="marquee-slider__list--item">Item 3</div>
+	        <div class="marquee-slider__list--item">Item 4</div>
+	        <div class="marquee-slider__list--item">Item 5</div>
+	        <div class="marquee-slider__list--item">Item 6</div>
+	        <div class="marquee-slider__list--item">Item 7</div>
+	        <div class="marquee-slider__list--item">Item 8</div>
+	        <div class="marquee-slider__list--item">Item 9</div>
+	     </div>
+	</div>
+
+	<div class="container">
+	    <div class="content">
+	        <h2>Usage</h2>
+	        <p>Apply the Marquee Slider plugin to the target elements:</p>
+	        
+	<pre><code>$('.marquee-slider').marqueeSlider([
+	    { sensitivity: 0.1, repeatItems: true },
+	    { sensitivity: 0.5, repeatItems: true },
+	]);
+	</code></pre>
+
+	        <h2>Options</h2>
+	        <p>The plugin supports the following options:</p>
+	        <p>sensitivity: Controls the speed of scrolling based on the user's scroll. Default is 0.1. repeatItems: Determines whether the items in the slider should be repeated. Default is true.</p>
+	        
+	        <h2 style="margin-bottom: 0">Demo Group 2 👇</h2>
+	    </div>
+	</div>
+
+	<div class="marquee-slider marquee-slider2">
+	    <div class="marquee-slider__list">
+	        <div class="marquee-slider__list--item">Item 1</div>
+	        <div class="marquee-slider__list--item">Item 2</div>
+	     </div>
+	    <div class="marquee-slider__list">
+	        <div class="marquee-slider__list--item">Item 1</div>
+	        <div class="marquee-slider__list--item">Item 2</div>
+	        <div class="marquee-slider__list--item">Item 3</div>
+	        <div class="marquee-slider__list--item">Item 4</div>
+	     </div>
+	    <div class="marquee-slider__list">
+	        <div class="marquee-slider__list--item">Item 1</div>
+	        <div class="marquee-slider__list--item">Item 2</div>
+	        <div class="marquee-slider__list--item">Item 3</div>
+	        <div class="marquee-slider__list--item">Item 4</div>
+	        <div class="marquee-slider__list--item">Item 5</div>
+	     </div>
+	</div>
+
+	<div class="container">
+	    <div class="content">
+	        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque aspernatur ducimus dicta assumenda accusantium, perspiciatis excepturi labore error nobis quisquam molestias, perferendis iste? Voluptatum officia, molestias harum perspiciatis assumenda architecto quod fugiat aliquid nostrum soluta libero, natus vitae? Porro illo, quisquam delectus recusandae magnam, qui incidunt iure tempore sunt culpa voluptas veritatis? Cumque ut distinctio itaque, atque est unde commodi minus illum alias pariatur necessitatibus reprehenderit, illo nemo blanditiis. Illo voluptatibus repudiandae minima sit alias voluptatem quasi facere a! Sapiente officiis, assumenda ratione doloribus voluptatem neque officia omnis illum eaque labore cupiditate minus enim corporis autem deleniti impedit laborum ipsam.</p>
+	        <p>Hic nobis dolore est officia minus nemo, delectus quod architecto quia nisi cumque ex voluptas dignissimos non atque natus, labore eum ab nostrum sint libero tempore, dicta vero. Rerum deleniti ipsa repellat ad nemo porro in quisquam nihil, accusamus exercitationem est fugit possimus ducimus vero natus et modi at quod eveniet, ex sit, cumque pariatur vitae necessitatibus. Dolorum impedit alias nam veritatis quibusdam sunt dolore aut esse soluta. Magnam excepturi tenetur omnis natus perspiciatis necessitatibus voluptates facilis modi dolores ea eum deserunt sunt optio nulla ducimus officia nobis, et consequuntur. Ad repellat vero debitis incidunt eligendi aperiam doloribus nam asperiores!</p>
+	        <p>Voluptates dolor, ipsa dolorum porro tenetur incidunt, fuga nam enim repellat eos ex voluptate dignissimos qui aut? Sit dolore rerum et sed quos id similique accusantium distinctio vitae corrupti? Quae dolorem quo sed porro sequi velit libero dignissimos nihil. Tempore non aspernatur accusantium fugiat ducimus ullam. Consequuntur, laboriosam quos vero, atque iusto quas voluptas quidem voluptatibus vel aliquid quaerat fugiat. Quidem maiores delectus culpa soluta minus possimus vel, repellat ipsam nulla neque assumenda modi veritatis mollitia suscipit. Ratione quae placeat ex eum, ad at veniam quam vero nemo consequatur fugiat. Modi ab numquam velit corporis itaque quas iusto unde id.</p>
+	        <p>Mollitia, sequi eveniet sunt eos sit saepe possimus excepturi corrupti, distinctio optio, beatae id reiciendis aliquam? Incidunt fugiat omnis porro, aliquam placeat, dolorem autem eveniet cupiditate nobis enim quasi temporibus perspiciatis id illum inventore laboriosam veritatis ratione illo esse provident, culpa hic veniam odio nesciunt! Recusandae est fuga reprehenderit porro, perspiciatis ratione necessitatibus sed nostrum consequuntur laborum? Temporibus distinctio quae optio accusantium obcaecati in molestias aut ex quas vero ipsa, consequatur explicabo unde. Minus ad cum quis molestias illum itaque error quae, deserunt veniam non consequuntur numquam fuga facilis pariatur sequi maiores officia doloremque beatae. Laborum voluptates at labore necessitatibus.</p>
+	        <p>Ab earum enim impedit est officia illum deserunt fuga, quam suscipit veniam animi sapiente exercitationem eligendi, et beatae quas ad! Nisi, doloremque illo? Asperiores, repudiandae? Sapiente ad consequatur numquam ex facilis similique vero porro magni officiis et tempora veritatis hic laboriosam iusto animi cupiditate velit rerum illo aperiam commodi eos, nemo ratione inventore consequuntur. Quisquam magnam sunt totam placeat possimus doloremque beatae minus, voluptatum omnis ab ducimus asperiores quidem quia ea! Recusandae unde atque aliquid. Blanditiis nesciunt dolorem quas illo, fugit aspernatur quisquam nulla distinctio amet aliquid enim quasi tempore tenetur, culpa dolorum facere esse neque? Qui repudiandae eos debitis!</p>
+	        <p>Modi ut eligendi aut est velit omnis perferendis vero excepturi dolor maxime praesentium eveniet quaerat culpa nihil vel impedit explicabo id illum optio voluptatem beatae repellat, odit iusto! Ea nostrum rerum dolorum, eius sit ad iusto ipsa quas neque sequi excepturi possimus labore vel. Ipsa facere illum earum nam odio corrupti cum nobis quisquam magnam aperiam voluptates vero, deserunt a, inventore accusantium nemo dolor placeat doloribus rerum iure at. Provident sapiente veritatis assumenda optio reiciendis ex adipisci incidunt, doloribus vel fugiat, alias mollitia magni impedit earum id ullam nulla tenetur quibusdam. Nisi obcaecati blanditiis praesentium ratione delectus, vitae impedit nulla.</p>
+	        <p>Voluptatum provident ducimus delectus sit ratione saepe, expedita animi reprehenderit rem neque numquam at. Voluptates sapiente rerum modi quibusdam quaerat consectetur, suscipit vel impedit at voluptatibus in alias ad vitae doloribus aperiam eveniet quidem a ratione? Non quae quos ab et delectus. Aut dolor tenetur, dicta deserunt maxime asperiores ex, voluptatum veniam dolores quasi, mollitia nisi blanditiis rem? Nulla, nostrum. Harum nobis, dolorem sequi iure facilis eius. Ipsam iusto accusantium cum voluptatem veniam ut, distinctio veritatis ea inventore temporibus reiciendis, ullam beatae nostrum voluptate omnis totam nulla libero sit. Ex facilis quisquam maxime libero ea fugit quaerat voluptate consequuntur optio!</p>
+	    </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script>
+		(function($) {
+		  $.fn.marqueeSlider = function(options) {
+		    const defaults = {
+		      sensitivity: 0.1,
+		      repeatItems: true,
+		    };
+
+		    return this.each(function(index, element) {
+		      const container = $(element);
+		      const lists = container.find('.marquee-slider__list');
+		      const settings = $.extend({}, defaults, options[index]);
+
+		      if (settings.repeatItems) {
+		        lists.each(function() {
+		          const list = $(this);
+		          const items = list.find('.marquee-slider__list--item');
+
+		          // Calculate the total width of the items
+		          let totalItemsWidth = 0;
+		          items.each(function() {
+		            totalItemsWidth += $(this).outerWidth(true);
+		          });
+
+		          // Calculate the number of items to repeat based on the container width
+		          const containerWidth = container.width();
+		          const itemsToRepeat = Math.ceil(containerWidth / totalItemsWidth) + 1;
+		        
+		            console.log(itemsToRepeat);
+		            
+		          // Clone and append items to meet the required count
+		          for (let i = 0; i < itemsToRepeat; i++) {
+		            items.clone().addClass('cloned').appendTo(list);
+		          }
+		        });
+		      }
+
+		      let scrollPosition = 0;
+		      let lastScrollTop = 0;
+
+		      function handleScroll() {
+		        const st = $(window).scrollTop();
+
+		        if (st > lastScrollTop) {
+		          // Scroll down
+		          scrollPosition += settings.sensitivity;
+		        } else {
+		          // Scroll up
+		          scrollPosition -= settings.sensitivity;
+		        }
+
+		        lists.each(function(index) {
+		          const direction = index % 2 === 0 ? -1 : 1;
+		          const translateValue = scrollPosition * direction;
+
+		          $(this).css('transform', `translate3d(${translateValue}%, 0, 0)`);
+		        });
+
+		        lastScrollTop = st;
+		      }
+
+		      $(window).on('scroll', function() {
+		        const containerTop = container.offset().top;
+		        const containerBottom = containerTop + container.outerHeight();
+		        const windowTop = $(window).scrollTop();
+		        const windowBottom = windowTop + $(window).height();
+
+		        if (windowBottom > containerTop && windowTop < containerBottom) {
+		          // The container is in the viewport
+		          handleScroll();
+		        }
+		      });
+		    });
+		  };
+		})(jQuery);
+
+		// Example usage:
+		$('.marquee-slider').marqueeSlider([
+		  { sensitivity: 0.1, repeatItems: true },
+		  { sensitivity: 0.5, repeatItems: true },
+		]);
+	</script>
+</body>
+</html>
